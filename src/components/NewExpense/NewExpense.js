@@ -11,7 +11,7 @@ const NewExpense = (props) => {
     };
 
     // "Send" data to App.js
-    props.onAddExpenseHandler(enteredExpenseData);
+    props.onAddExpenseHandler(enteredData);
   };
 
   return (
