@@ -17,10 +17,10 @@ const Expenses = (props) => {
         onChangeFilter={onChangeFilter}
         yearSelected={filterValue}
       />
-      {props.items.map((expense, index) => {
+      {props.items.map((expense) => {
         return (
           <ExpenseItem
-            key={index}
+            key={expense.id}
             title={expense.title}
             amount={expense.amount}
             date={expense.date}
